@@ -1,0 +1,225 @@
+//All colors for the site
+
+//lightest color, for backgrounds
+$lightest-color: hsl(160, 10%, 90%);
+
+//homepage and about colors
+$darkest-blue: hsl(160, 14%, 28%);
+$dark-blue: hsl(160, 37%, 35%);
+$gray-blue: hsl(160, 14%, 53%);
+$bright-blue: hsl(160, 45%, 50%);
+$light-blue: hsl(160, 75%, 85%);
+
+//coding colors
+$darkest-pink: hsl(348, 14%, 28%);
+$dark-pink: hsl(348, 37%, 35%);
+$gray-pink: hsl(348, 14%, 53%);
+$bright-pink: hsl(348, 45%, 50%);
+$light-pink: hsl(348, 75%, 85%);
+
+//ideation and prototyping colors
+$darkest-orange: hsl(20, 14%, 28%);
+$dark-orange: hsl(20, 37%, 35%);
+$gray-orange: hsl(20, 14%, 53%);
+$bright-orange: hsl(20, 45%, 50%);
+$light-orange: hsl(20, 75%, 85%);
+
+//digital art colors
+$darkest-gold: hsl(36, 14%, 28%);
+$dark-gold: hsl(36, 37%, 42%);
+$gray-gold: hsl(36, 14%, 53%);
+$bright-gold: hsl(36, 45%, 50%);
+$light-gold: hsl(36, 75%, 85%);
+
+//audio colors
+$darkest-red: hsl(4, 14%, 28%);
+$dark-red: hsl(4, 37%, 35%);
+$gray-red: hsl(4, 14%, 53%);
+$bright-red: hsl(4, 45%, 50%);
+$light-red: hsl(4, 75%, 85%);
+
+
+//constant styles
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+div.wrapper {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+div.pagefooter {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: $lightest-color;
+}
+
+header {
+    text-align: center;
+    font-size: 64px;
+    a:link, a:visited, a:hover {
+        text-decoration: none;
+    }
+}
+
+footer {
+    font-size: 16px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    font-size: 48px;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 75px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+div.caption {
+    text-align: right;
+    width: 70%;
+}
+
+
+//content-specific styles
+
+body.body-home {
+    color: $dark-blue;
+    header, footer {
+        background-color: $dark-blue;
+        color: $light-blue;
+        a:link, a:visited {
+            color: $light-blue;
+        }
+        a:hover {
+            color: $lightest-color;
+        }
+    }
+    h1 {
+        color: $bright-blue;
+    }
+    h2 {
+        color: $gray-blue;
+    }
+}
+
+body.ideapro-home {
+    color: $dark-blue;
+    header, footer {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+0,38594e+40,775443+79,38594e+90,7f5946+96,38594e+100 */
+            background: #38594e; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #38594e 0%, #38594e 40%, #775443 79%, #38594e 90%, #7f5946 96%, #38594e 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #38594e 0%,#38594e 40%,#775443 79%,#38594e 90%,#7f5946 96%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #38594e 0%,#38594e 40%,#775443 79%,#38594e 90%,#7f5946 96%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        color: $light-blue;
+        a:link, a:visited {
+            color: $light-blue;
+        }
+        a:hover {
+            color: $lightest-color;
+        }
+    }
+    h1 {
+        color: $bright-blue;
+    }
+    h2 {
+        color: $gray-blue;
+    }
+}
+
+body.coding-home {
+    color: $dark-blue;
+    header, footer {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+0,38594e+40,7f4651+80,38594e+90,7f4651+96,38594e+100 */
+            background: #38594e; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #38594e 0%, #38594e 40%, #7f4651 80%, #38594e 90%, #7f4651 96%, #38594e 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #38594e 0%,#38594e 40%,#7f4651 80%,#38594e 90%,#7f4651 96%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #38594e 0%,#38594e 40%,#7f4651 80%,#38594e 90%,#7f4651 96%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        color: $light-blue;
+        a:link, a:visited {
+            color: $light-blue;
+        }
+        a:hover {
+            color: $lightest-color;
+        }
+    }
+    h1 {
+        color: $bright-blue;
+    }
+    h2 {
+        color: $gray-blue;
+    }
+}
+
+body.audio-home {
+    color: $dark-blue;
+    header, footer {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+0,38594e+40,7a4844+80,38594e+90,7f4946+96,38594e+100 */
+            background: #38594e; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #38594e 0%, #38594e 40%, #7a4844 80%, #38594e 90%, #7f4946 96%, #38594e 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #38594e 0%,#38594e 40%,#7a4844 80%,#38594e 90%,#7f4946 96%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #38594e 0%,#38594e 40%,#7a4844 80%,#38594e 90%,#7f4946 96%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        color: $light-blue;
+        a:link, a:visited {
+            color: $light-blue;
+        }
+        a:hover {
+            color: $lightest-color;
+        }
+    }
+    h1 {
+        color: $bright-blue;
+    }
+    h2 {
+        color: $gray-blue;
+    }
+}
+
+body.art-home {
+    color: $dark-blue;
+    header, footer {
+       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+0,38594e+40,7c6645+80,38594e+90,7c6645+96,38594e+100 */
+            background: #38594e; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #38594e 0%, #38594e 40%, #7c6645 80%, #38594e 90%, #7c6645 96%, #38594e 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-45deg, #38594e 0%,#38594e 40%,#7c6645 80%,#38594e 90%,#7c6645 96%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(135deg, #38594e 0%,#38594e 40%,#7c6645 80%,#38594e 90%,#7c6645 96%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        color: $light-blue;
+        a:link, a:visited {
+            color: $light-blue;
+        }
+        a:hover {
+            color: $lightest-color;
+        }
+    }
+    h1 {
+        color: $bright-blue;
+    }
+    h2 {
+        color: $gray-blue;
+    }
+}
