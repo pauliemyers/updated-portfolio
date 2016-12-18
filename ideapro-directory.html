@@ -11,8 +11,8 @@
 
 <body class="ideapro-home">
     <div class="wrapper">
-        
-        <nav class="navbar navbar-default">
+
+        <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -23,7 +23,7 @@
                     </button>
                     <a class="navbar-brand" id="myers" href="index.html">MYERS</a>
                 </div>
-                 <div id="navbar" class="navbar-collapse collapse navbar-right navbar-static-top">
+                <div id="navbar" class="navbar-collapse collapse navbar-right navbar-static-top">
                     <ul class="nav navbar-nav">
                         <li>
                             <a href="games-directory.html">Games and Coding</a>
@@ -41,12 +41,38 @@
                 </div>
             </div>
         </nav>
-        
+
         <div class="pageheader">
             <header id="fullheader"><a href="index.html">PAUL ARTHUR MYERS</a>
                 <header>
         </div>
-                <div class="content"></div>
+        <div class="content" id="content">
+            <div class="home">
+                <h1 class="page-title">Ideation and Prototyping</h1>
+            </div>
+            <h2 class="page-subtitle">Select an icon to view its slideshow <br> Projects are best viewed on a laptop or desktop computer</h2>
+
+            <div class="container-fluid" id="ideapro-icons">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a role="button" id="theCyoub">
+                            <figure><img class="center-block" src="images/buttons/ideapro/thecyoub-design-button.jpg" />
+                                <figcaption>The Cyoub</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <a role="button" class="backbutton1" id="backbutton1">Menu</a>
+            <div class="bottomnav" id="bottomnav">
+            <a id="homeback" href="index.html">Home</a>
+            <a id="gamesback" href="games-directory.html">Games and Coding</a>
+            <a id="soundback" href="sound-directory.html">Sound and Music</a>
+            <a id="ideaproback" href="ideapro-directory.html">Ideation and Prototyping</a>
+            <a id="modelingback" href="modeling-directory.html">3D and VR</a>
+            </div>
+        </div>
     </div>
 
     <div class="pagefooter">
@@ -59,6 +85,8 @@
 
     <!--CDN link for  TweenMax-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+    <script src="js/script.js"></script>
 
 </body>
 

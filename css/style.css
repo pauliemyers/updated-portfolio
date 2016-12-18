@@ -24,7 +24,7 @@ div.wrapper {
   padding-bottom: 60px; }
 
 div.content {
-  background: #f2f3f2;
+  background: #ffffff;
   margin-left: 5%;
   margin-right: 5%;
   padding-left: 1%;
@@ -46,7 +46,9 @@ body {
   min-height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: #f2f3f2; }
+  background-color: #ffffff; }
+  body .modeling-home div.pageheader, body .sound-home div.pageheader, body .games-home div.pageheader, body .ideapro-home div.pageheader {
+    padding-top: 50px; }
 
 header {
   text-align: center;
@@ -68,28 +70,23 @@ footer {
   right: 0;
   width: inherit; }
 
-h1 {
+h1.page-title {
   font-size: 48px;
   font-family: "Ailerons", sans-serif;
-  text-align: center; }
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 25px; }
 
-h2 {
+h2.page-subtitle {
   font-size: 24px;
   font-family: "Coves", sans-serif;
-  text-align: center; }
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
-h3 {
-  font-size: 16px;
-  font-family: "Coves", sans-serif;
-  text-align: center; }
-
-img .img-me {
-  max-width: 100%;
-  height: auto; }
-
-div.col-lg-3.col-md-6 {
+div.col-lg-3.col-md-6, div.col-lg-4.col-md-6 {
   padding-bottom: 10px; }
-  div.col-lg-3.col-md-6 img {
+  div.col-lg-3.col-md-6 img, div.col-lg-4.col-md-6 img {
     width: inherit; }
 
 p {
@@ -106,6 +103,20 @@ nav {
   nav li {
     font-family: "Kano", sans-serif;
     font-size: 12px; }
+
+a.backbutton1 {
+  font-family: "Kano", sans-serif;
+  font-size: 16px; }
+
+div.bottomnav a {
+  display: inline-block;
+  padding-right: 10px;
+  font-family: "Kano", sans-serif; }
+
+figcaption {
+  text-align: center;
+  font-family: "Coves", sans-serif;
+  font-size: 16px; }
 
 body.body-home {
   color: #387a64;
@@ -125,7 +136,7 @@ body.body-home {
     body.body-home header a:link, body.body-home header a:visited, body.body-home footer a:link, body.body-home footer a:visited {
       color: #bcf5e2; }
     body.body-home header a:hover, body.body-home footer a:hover {
-      color: #f2f3f2; }
+      color: #ffffff; }
   body.body-home h1 {
     color: #46b993; }
   body.body-home h2 {
@@ -149,7 +160,7 @@ body.ideapro-home {
     body.ideapro-home header a:link, body.ideapro-home header a:visited, body.ideapro-home footer a:link, body.ideapro-home footer a:visited {
       color: #bcf5e2; }
     body.ideapro-home header a:hover, body.ideapro-home footer a:hover {
-      color: #f2f3f2; }
+      color: #ffffff; }
   body.ideapro-home h1 {
     color: #46b993; }
   body.ideapro-home h2 {
@@ -173,7 +184,7 @@ body.games-home {
     body.games-home header a:link, body.games-home header a:visited, body.games-home footer a:link, body.games-home footer a:visited {
       color: #bcf5e2; }
     body.games-home header a:hover, body.games-home footer a:hover {
-      color: #f2f3f2; }
+      color: #ffffff; }
   body.games-home h1 {
     color: #46b993; }
   body.games-home h2 {
@@ -197,7 +208,7 @@ body.sound-home {
     body.sound-home header a:link, body.sound-home header a:visited, body.sound-home footer a:link, body.sound-home footer a:visited {
       color: #bcf5e2; }
     body.sound-home header a:hover, body.sound-home footer a:hover {
-      color: #f2f3f2; }
+      color: #ffffff; }
   body.sound-home h1 {
     color: #46b993; }
   body.sound-home h2 {
@@ -221,7 +232,7 @@ body.modeling-home {
     body.modeling-home header a:link, body.modeling-home header a:visited, body.modeling-home footer a:link, body.modeling-home footer a:visited {
       color: #bcf5e2; }
     body.modeling-home header a:hover, body.modeling-home footer a:hover {
-      color: #f2f3f2; }
+      color: #ffffff; }
   body.modeling-home h1 {
     color: #46b993; }
   body.modeling-home h2 {

@@ -11,8 +11,8 @@
 
 <body class="games-home">
     <div class="wrapper">
-        
-        <nav class="navbar navbar-default">
+
+        <nav class="navbar navbar-default navbar-fixed-top" id="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -41,14 +41,60 @@
                 </div>
             </div>
         </nav>
-        
+
         <div class="pageheader">
             <header id="fullheader"><a href="index.html">PAUL ARTHUR MYERS</a>
                 <header>
         </div>
-                
-                <div class="content"></div>
-                
+
+        <div class="content" id="content">
+            <div class="home">
+                <h1 class="page-title">Games and Coding Exercises</h1>
+            </div>
+            <h2 class="page-subtitle">Select an icon to view larger <br> Coding content not intended for viewing on mobile devices</h2>
+
+            <div class="container-fluid" id="games-icons">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a role="button" id="youAreHereButton">
+                            <figure><img class="center-block" src="images/buttons/games/you-are-here-button.jpg" />
+                                <figcaption>You Are Here</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a role="button" id="lSystemButton">
+                            <figure><img class="center-block" src="images/buttons/games/lindenmayer-button.jpg" />
+                                <figcaption>Lindenmayer System</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                            <a role="button" id="turtleButton">
+                            <figure><img class="center-block" src="images/buttons/games/turtle-graphics-button.jpg" />
+                                <figcaption>Turtle Graphics</figcaption>
+                        </figure>
+                        </a></div>
+                    <div class="col-lg-4 col-md-6">
+                        <a role="button" id="gameOfLifeButton">
+                            <figure><img class="center-block" src="images/buttons/games/game-of-life-button.jpg" />
+                            <figcaption>Game of Life</figcaption></figure>
+                        </a></div>
+                    <div class="col-lg-4 col-md-6">
+                        <a role="button" id="spirographButton"><figure><img class="center-block"  src="images/buttons/games/spirograph-button.jpg" /><figcaption>Spirograph</figcaption></figure></a>
+                    </div>
+                </div>
+
+            </div>
+            <a role="button" class="backbutton1" id="backbutton1">Menu</a>
+            <div class="bottomnav" id="bottomnav">
+            <a id="homeback" href="index.html">Home</a>
+            <a id="gamesback" href="games-directory.html">Games and Coding</a>
+            <a id="soundback" href="sound-directory.html">Sound and Music</a>
+            <a id="ideaproback" href="ideapro-directory.html">Ideation and Prototyping</a>
+            <a id="modelingback" href="modeling-directory.html">3D and VR</a>
+            </div>
+        </div>
     </div>
 
     <div class="pagefooter">
@@ -61,6 +107,8 @@
 
     <!--CDN link for  TweenMax-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+    <script src="js/script.js"></script>
 
 </body>
 

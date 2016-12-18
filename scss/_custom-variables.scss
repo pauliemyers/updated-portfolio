@@ -1,7 +1,7 @@
 //All colors for the site
 
 //lightest color, for backgrounds
-$lightest-color: #f2f3f2;
+$lightest-color: #ffffff;
 
 //homepage and about colors
 $darkest-blue: hsl(160, 14%, 28%);
@@ -106,6 +106,9 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: $lightest-color;
+    .modeling-home div.pageheader, .sound-home div.pageheader, .games-home div.pageheader, .ideapro-home div.pageheader{
+        padding-top: 50px;
+    }
 }
 
 header {
@@ -132,33 +135,24 @@ footer {
     width: inherit;
 }
 
-h1 {
+h1.page-title {
     font-size: 48px;
     font-family: "Ailerons", sans-serif;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
-h2 {
+h2.page-subtitle {
 
     font-size: 24px;
     font-family: "Coves", sans-serif;
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-h3 {
-    font-size: 16px;
-    font-family: "Coves", sans-serif;
-    text-align: center;
-}
-
-img {
-    .img-me {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-div.col-lg-3.col-md-6 {
+div.col-lg-3.col-md-6, div.col-lg-4.col-md-6 {
     padding-bottom: 10px;
     img {
         width: inherit;
@@ -185,6 +179,23 @@ nav {
     font-family: "Kano", sans-serif;
     font-size: 12px;
     }
+}
+
+a.backbutton1 {
+    font-family: "Kano", sans-serif;
+    font-size: 16px;
+}
+
+div.bottomnav a {
+    display: inline-block;
+    padding-right: 10px;
+    font-family: "Kano", sans-serif;
+}
+
+figcaption {
+    text-align: center;
+    font-family: "Coves", sans-serif;
+    font-size: 16px;
 }
 
 
