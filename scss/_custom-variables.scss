@@ -1,7 +1,7 @@
 //All colors for the site
 
 //lightest color, for backgrounds
-$lightest-color: hsl(160, 10%, 90%);
+$lightest-color: #f2f3f2;
 
 //homepage and about colors
 $darkest-blue: hsl(160, 14%, 28%);
@@ -39,6 +39,34 @@ $bright-red: hsl(4, 45%, 50%);
 $light-red: hsl(4, 75%, 85%);
 
 
+//Changing navbar styles using variables so that they override bootstrap
+$navbar-margin-bottom: 0px;
+$navbar-opacity: .8;
+$ailerons: "Ailerons", sans-serif;
+$coves: "Coves", sans-serif;
+$kano: "Kano", sans-serif;
+
+//fonts
+
+@font-face {
+    font-family: Coves;
+    src: url(../font/coves-font/coves-light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Kano;
+    src: url(../font/kano_regular/kano.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Ailerons;
+    src: url(../font/ailerons/ailerons-typeface.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 //constant styles
 
 html {
@@ -52,8 +80,19 @@ div.wrapper {
     padding-bottom: 60px;
 }
 
+div.content {
+    background: $lightest-color;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: relative;
+    min-height: 100%;
+}
+
 div.pagefooter {
-    height: 60px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -72,33 +111,80 @@ body {
 header {
     text-align: center;
     font-size: 64px;
+    font-family: "Ailerons", sans-serif;
     a:link, a:visited, a:hover {
         text-decoration: none;
     }
 }
 
+div.home {
+    background-size: cover;
+}
+
 footer {
     font-size: 16px;
+    font-family: "Kano", sans-serif;
     text-align: center;
+    height: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
 }
 
 h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 10px;
     font-size: 48px;
+    font-family: "Ailerons", sans-serif;
+    text-align: center;
 }
 
 h2 {
-    margin-top: 15px;
-    margin-bottom: 75px;
-    padding-bottom: 10px;
+
     font-size: 24px;
+    font-family: "Coves", sans-serif;
+    text-align: center;
 }
 
-div.caption {
-    text-align: right;
-    width: 70%;
+h3 {
+    font-size: 16px;
+    font-family: "Coves", sans-serif;
+    text-align: center;
+}
+
+img {
+    .img-me {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+div.col-lg-3.col-md-6 {
+    padding-bottom: 10px;
+    img {
+        width: inherit;
+    }
+}
+
+p {
+    font-size: 16px;
+    font-family: "Coves", sans-serif;
+}
+
+
+
+nav {
+    opacity: $navbar-opacity;
+    .navbar-brand {
+    font-family: "Ailerons", sans-serif;
+    font-size: 24px;
+    }
+    .navbar {
+    margin-bottom: $navbar-margin-bottom;
+    }
+    li {
+    font-family: "Kano", sans-serif;
+    font-size: 12px;
+    }
 }
 
 
@@ -106,8 +192,13 @@ div.caption {
 
 body.body-home {
     color: $dark-blue;
-    header, footer {
-        background-color: $dark-blue;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+42,46767f+73,38594e+89,46767f+95,38594e+100 */
+background: #38594e; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #38594e 42%, #46767f 73%, #38594e 89%, #46767f 95%, #38594e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #38594e 42%,#46767f 73%,#38594e 89%,#46767f 95%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #38594e 42%,#46767f 73%,#38594e 89%,#46767f 95%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        header, footer {
         color: $light-blue;
         a:link, a:visited {
             color: $light-blue;
@@ -126,13 +217,13 @@ body.body-home {
 
 body.ideapro-home {
     color: $dark-blue;
-    header, footer {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+0,38594e+40,775443+79,38594e+90,7f5946+96,38594e+100 */
             background: #38594e; /* Old browsers */
             background: -moz-linear-gradient(-45deg, #38594e 0%, #38594e 40%, #775443 79%, #38594e 90%, #7f5946 96%, #38594e 100%); /* FF3.6-15 */
             background: -webkit-linear-gradient(-45deg, #38594e 0%,#38594e 40%,#775443 79%,#38594e 90%,#7f5946 96%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(135deg, #38594e 0%,#38594e 40%,#775443 79%,#38594e 90%,#7f5946 96%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        header, footer {
         color: $light-blue;
         a:link, a:visited {
             color: $light-blue;
@@ -149,15 +240,15 @@ body.ideapro-home {
     }
 }
 
-body.coding-home {
+body.games-home {
     color: $dark-blue;
-    header, footer {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+0,38594e+40,7f4651+80,38594e+90,7f4651+96,38594e+100 */
             background: #38594e; /* Old browsers */
             background: -moz-linear-gradient(-45deg, #38594e 0%, #38594e 40%, #7f4651 80%, #38594e 90%, #7f4651 96%, #38594e 100%); /* FF3.6-15 */
             background: -webkit-linear-gradient(-45deg, #38594e 0%,#38594e 40%,#7f4651 80%,#38594e 90%,#7f4651 96%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(135deg, #38594e 0%,#38594e 40%,#7f4651 80%,#38594e 90%,#7f4651 96%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        header, footer {
         color: $light-blue;
         a:link, a:visited {
             color: $light-blue;
@@ -174,15 +265,15 @@ body.coding-home {
     }
 }
 
-body.audio-home {
+body.sound-home {
     color: $dark-blue;
-    header, footer {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+0,38594e+40,7a4844+80,38594e+90,7f4946+96,38594e+100 */
             background: #38594e; /* Old browsers */
             background: -moz-linear-gradient(-45deg, #38594e 0%, #38594e 40%, #7a4844 80%, #38594e 90%, #7f4946 96%, #38594e 100%); /* FF3.6-15 */
             background: -webkit-linear-gradient(-45deg, #38594e 0%,#38594e 40%,#7a4844 80%,#38594e 90%,#7f4946 96%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(135deg, #38594e 0%,#38594e 40%,#7a4844 80%,#38594e 90%,#7f4946 96%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        header, footer {
         color: $light-blue;
         a:link, a:visited {
             color: $light-blue;
@@ -199,15 +290,16 @@ body.audio-home {
     }
 }
 
-body.art-home {
+body.modeling-home {
     color: $dark-blue;
-    header, footer {
+
        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#38594e+0,38594e+40,7c6645+80,38594e+90,7c6645+96,38594e+100 */
             background: #38594e; /* Old browsers */
             background: -moz-linear-gradient(-45deg, #38594e 0%, #38594e 40%, #7c6645 80%, #38594e 90%, #7c6645 96%, #38594e 100%); /* FF3.6-15 */
             background: -webkit-linear-gradient(-45deg, #38594e 0%,#38594e 40%,#7c6645 80%,#38594e 90%,#7c6645 96%,#38594e 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(135deg, #38594e 0%,#38594e 40%,#7c6645 80%,#38594e 90%,#7c6645 96%,#38594e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38594e', endColorstr='#38594e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        header, footer {
         color: $light-blue;
         a:link, a:visited {
             color: $light-blue;
